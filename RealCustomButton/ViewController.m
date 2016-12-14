@@ -28,7 +28,7 @@
     btn.backgroundColor = [UIColor orangeColor];
     [btn setTitle:@"hello" forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:@"testImg"] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     
     btn.dl_ImageRect = CGRectMake(375 - 100, 0, 100, 100);
     btn.dl_TitleRect = CGRectMake(0, 0, 100, 100);
@@ -42,7 +42,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)btnAction {
+- (void)btnAction:(UIButton*)btn{
     NSLog(@"btnAction");
 }
 

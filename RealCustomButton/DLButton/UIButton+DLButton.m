@@ -44,8 +44,11 @@ void addMethod(Class c, SEL originSEL,SEL newSEL) {
 }
 
 @implementation UIButton (DLButton)
+#pragma mark - life circle
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
 
-#pragma mark - override
 + (void)load {
     addMethod(self, @selector(titleRectForContentRect:), @selector(new_titleRectForContentRect:));
     addMethod(self, @selector(imageRectForContentRect:), @selector(new_imageRectForContentRect:));
