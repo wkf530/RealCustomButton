@@ -1,19 +1,16 @@
-#### UIButton+DLButton
-
+### UIButton+DLButton
 高度自定义button中image、title的位置
 
-#### Installing.安装
+### Installing.安装
+直接导入到项目中来
 
-pod进来
-
-或者直接导入到项目中来
-
-#### Getting Started.使用手册
+### Getting Started.使用手册
 
 UIButton的对象创建好之后，想要自定义image与title的位置直接去修改dl_TitleRect、dl_ImageRect就行
 举个栗子：
 ```
-CGFloat btnY = 20.0;
+
+	CGFloat btnY = 20.0;
 
     UIButton* btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn1.frame = CGRectMake(30, btnY , SCREEN_WIDTH, 100);
@@ -61,9 +58,9 @@ CGFloat btnY = 20.0;
 
 ```
 
-#### 项目运行效果
-![Paste_Image.png](https://github.com/liaoshaolim/RealCustomButton/raw/master/Screen/screen.png)
+### 运行效果
+![运行效果](https://github.com/liaoshaolim/RealCustomButton/raw/master/Screen/screen.png)
 
-#### License
+### License
 
 UIButton+DLButton is released under the MIT license. See LICENSE for details.
